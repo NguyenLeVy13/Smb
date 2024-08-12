@@ -1,106 +1,227 @@
 <div class="flex justify-center flex-col lg:flex-row">
-    <form
-        class=" flex flex-col p-6 lg:py-16 justify-center lg:pl-44 lg:max-w-xl bg-[url('https://tcmacore.prod.azw2k8-public.impartner.io/static/customer-resources/unify-partner-program/assets/Group-26-061220231112.png')] bg-cover"
-        action="">
-        <h1 class=" text-2xl text-white font-medium px-4 py-2 lg:max-w-96 ">Neem contact met ons op</h1>
-        <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96  ">
-            <label class="text-white" for="username">Naam*</label>
-            <input class="px-4 py-2 rounded-full" type="text" id="username" name="username">
-            <h4 class="hidden text-xs text-red-500">Dit veld dient u in te vullen om verder te gaan</h4>
-        </div>
-        <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96  ">
-            <label class="text-white" for="company">Bedijf*</label>
-            <input class="px-4 py-2 rounded-full" type="text" id="company" name="company">
-            <h4 class="hidden text-xs text-red-500">Dit veld dient u in te vullen om verder te gaan</h4>
-        </div>
-        <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96  ">
-            <label class="text-white" for="phonenumber">Telefoonnumber*</label>
-            <input class="px-4 py-2 rounded-full" type="text" id="phonenumber" name="phonenumber">
-            <h4 class="hidden text-xs text-red-500">Dit veld dient u in te vullen om verder te gaan</h4>
-        </div>
-        <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96  ">
-            <label class="text-white" for="email">E-mail*</label>
-            <input class="px-4 py-2 rounded-full" type="text" id="email" name="email">
-            <h4 class="hidden text-xs text-red-500">Dit veld dient u in te vullen om verder te gaan</h4>
-        </div>
-        <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96 relative">
-            <label class="text-white " for="help">Hoe kunnen we u helpen?*</label>
-            <div (click)="toggleDrop()" class="flex justify-between  items-center bg-white px-4 py-2 rounded-full">
-                <input class="w-60" type="text" id="help" name="help" placeholder="-Hoe kunnen we u helpen?-*">
-                <svg _ngcontent-jac-c11="" class="class-select-icon w-auto pr-1 cursor-pointer fill-current" height="20"
-                    viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-                    <path _ngcontent-jac-c11="" d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4l-6 6Z" fill="currentColor">
-                    </path>
-                </svg>
-            </div>
-            <div [class.hidden]="!onDrop">
-                <div class="flex flex-col top-24 absolute max-w-[352px] rounded-lg z-10 bg-white shadow-lg">
-                    <span class="px-5 py-3 rounded-t-lg hover:bg-neutral-100 ">-Hoe kunnen we u helpen?-*</span>
-                    <span class="px-5 py-3 hover:bg-neutral-100 truncate">Vraag een gratis proefperiode voor Unify Phone
-                        aan</span>
-                    <span class="px-5 py-3 rounded-b-lg hover:bg-neutral-100 "> Neem contact op met een deskundige
-                    </span>
-                </div>
-            </div>
-            <h4 class="hidden text-xs text-red-500">Dit veld dient u in te vullen om verder te gaan</h4>
-        </div>
-        <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96  ">
-            <label class="text-white" for="note">Opmerkingen</label>
-            <input class="px-4 pt-2 py-36 rounded-xl" type="text" id="note" name="note">
-            <h4 class="hidden text-xs text-red-500">Dit veld dient u in te vullen om verder te gaan</h4>
-        </div>
-        <label class="text-white text-sm flex justify-center items-center gap-4 p-4 lg:max-w-96 "><input type="checkbox"
-                name="check">Ik bevestig dat Impartner - Partners mijn persoonlijke gegevens mag
-            gebruiken om contact met mij op te nemen. Impartner - Partners is verantwoordelijk voor de naleving van de
-            geldende privacyregels*
-        </label>
-        <div>
-            <div class="flex justify-center items-center px-4 py-2 rounded-full bg-sky-400 max-w-[110px] gap-2">
-                <input class="text-white  " type="submit">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_735_8)">
-                        <mask id="mask0_735_8" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
-                            width="20" height="20">
-                            <path d="M20 0H0V20H20V0Z" fill="white" />
-                        </mask>
-                        <g mask="url(#mask0_735_8)">
-                            <path
-                                d="M8.33322 5L7.15405 6.17917L10.9749 10L7.15405 13.8208L8.33322 15L13.3332 10L8.33322 5Z"
-                                fill="white" />
-                        </g>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_735_8">
-                            <rect width="20" height="20" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
-        </div>
-
-    </form>
-    <div class="flex flex-col p-6 lg:p-16 lg:max-w-4xl gap-6 ">
-        <h1 class="text-3xl text-sky-400 font-semibold ">OpenScape Business biedt meer UC-functionaliteit in één
-            oplossing dan enige andere leverancier</h1>
-        <p>
-            Het succes van elk bedrijf, groot of klein, hangt af van de effectiviteit van de communicatie. OpenScape
-            Business biedt de eenvoudigste weg naar het uitrollen van volledige, IP-gebaseerde unified
-            communications
-            over het hele netwerk van gebruikers:
-        </p>
-        <ul class="list-disc ml-8">
-            <li>Onafhankelijk gebruik van uw bestaande telefonie-infrastructuur - of dit nu klassieke telefonie, IP of
-                DECT
-                is
-            </li>
-            <li>Eenvoudig te gebruiken, volledig schaalbare en kosteneffectieve oplossing</li>
-            <li>Kostenbesparende Voice over IP (VoIP) van hoge kwaliteit op bestaande netwerken</li>
-            <li>Flexibele implementatiemodellen - op locatie, gehost, in de cloud of gecombineerd</li>
-            <li>Pure software-gebaseerde optie met OpenScape Business S voor private cloud implementatie</li>
-            <li>Permanente (CAPEX) of abonnementsgebaseerde (OPEX) gebruiksmodellen</li>
-            <li>UC beschikbaar op de belangrijkste mobiele platforms; ondersteuning voor Android en Apple iOS</li>
-            <li>Integratiemogelijkheden met Microsoft 365 en Microsoft Teams</li>
-            <li>Go Hybrid: voeg cloud-gebaseerde diensten toe voor samenwerking (video, screensharing, telefonie)</li>
-        </ul>
+  <form
+    class="flex flex-col justify-center lg:pl-44 lg:max-w-xl bg-[url('https://tcmacore.prod.azw2k8-public.impartner.io/static/customer-resources/unify-partner-program/assets/Group-26-061220231112.png')] bg-cover"
+    [formGroup]="contactForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <h1 class="text-2xl text-white font-medium px-4 py-2 lg:max-w-96">
+      Neem contact met ons op
+    </h1>
+    <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96">
+      <label class="text-white" for="username">Naam*</label>
+      <input
+        class="px-4 py-2 rounded-full"
+        id="username"
+        formControlName="username"
+        required
+        (blur)="onBlurFormInput('username', 'err-msg-username')"
+        (input)="onInputFormInput('username', 'err-msg-username')"
+      />
+      <h4 id="err-msg-username" class="hidden text-xs text-red-500">
+        Dit veld dient u in te vullen om verder te gaan
+      </h4>
     </div>
+    <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96">
+      <label class="text-white" for="company">Bedijf*</label>
+      <input
+        class="px-4 py-2 rounded-full"
+        id="company"
+        formControlName="company"
+        required
+        (blur)="onBlurFormInput('company', 'err-msg-company')"
+        (input)="onInputFormInput('company', 'err-msg-company')"
+      />
+      <h4 id="err-msg-company" class="hidden text-xs text-red-500">
+        Dit veld dient u in te vullen om verder te gaan
+      </h4>
+    </div>
+    <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96">
+      <label class="text-white" for="phoneNumber">Telefoonnumber*</label>
+      <input
+        class="px-4 py-2 rounded-full"
+        type="string"
+        id="phoneNumber"
+        formControlName="phoneNumber"
+        required
+        (blur)="onBlurFormInput('phoneNumber', 'err-msg-phoneNumber')"
+        (input)="onInputFormInput('phoneNumber', 'err-msg-phoneNumber')"
+      />
+      <h4 id="err-msg-phoneNumber" class="hidden text-xs text-red-500">
+        Dit veld dient u in te vullen om verder te gaan
+      </h4>
+    </div>
+    <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96">
+      <label class="text-white" for="email">E-mail*</label>
+      <input
+        class="px-4 py-2 rounded-full"
+        type="text"
+        id="email"
+        formControlName="email"
+        required
+        (blur)="onBlurFormInput('email', 'err-msg-email')"
+        (input)="onInputFormInput('email', 'err-msg-email')"
+      />
+      <h4 id="err-msg-email" class="hidden text-xs text-red-500">
+        Dit veld dient u in te vullen om verder te gaan
+      </h4>
+    </div>
+    <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96 relative">
+      <label class="text-white" for="help">Hoe kunnen we u helpen?*</label>
+      <div
+        (click)="toggleDrop()"
+        class="flex justify-between items-center bg-white px-4 py-2 rounded-full"
+      >
+        <input
+          class="w-60"
+          type="text"
+          id="help"
+          name="help"
+          formControlName="help"
+          required
+          placeholder="-Hoe kunnen we u helpen?-*"
+        />
+        <svg
+          _ngcontent-jac-c11=""
+          class="class-select-icon w-auto pr-1 cursor-pointer fill-current"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            _ngcontent-jac-c11=""
+            d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4l-6 6Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+      <div [class.hidden]="!onDrop">
+        <div
+          class="flex flex-col top-24 absolute max-w-[352px] rounded-lg z-10 bg-white shadow-lg"
+        >
+          <span
+            *ngFor="let i of whatWeHelps"
+            class="px-5 py-3 rounded-t-lg hover:bg-neutral-100"
+            (click)="onSelectHelp(i)"
+            >{{ i.label }}</span
+          >
+        </div>
+      </div>
+      <h4 class="hidden text-xs text-red-500">
+        Dit veld dient u in te vullen om verder te gaan
+      </h4>
+    </div>
+    <div class="flex flex-col px-4 py-2 gap-2 lg:max-w-96">
+      <label class="text-white" for="note">Opmerkingen</label>
+      <input
+        class="px-4 pt-2 py-36 rounded-xl"
+        type="text"
+        id="note"
+        name="note"
+      />
+      <h4 class="hidden text-xs text-red-500">
+        Dit veld dient u in te vullen om verder te gaan
+      </h4>
+    </div>
+    <label
+      class="text-white text-sm flex justify-center items-center gap-4 p-4 lg:max-w-96"
+      ><input type="checkbox" name="check" />Ik bevestig dat Impartner -
+      Partners mijn persoonlijke gegevens mag gebruiken om contact met mij op te
+      nemen. Impartner - Partners is verantwoordelijk voor de naleving van de
+      geldende privacyregels*
+    </label>
+    <div>
+      <div
+        class="flex justify-center items-center px-4 py-2 rounded-full bg-sky-400 max-w-[110px] gap-2"
+      >
+        <button
+          class="text-white"
+          [ngClass]="{ 'cursor-not-allowed': contactForm.invalid }"
+          type="submit"
+          [disabled]="contactForm.invalid"
+        >
+          Submit
+        </button>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_735_8)">
+            <mask
+              id="mask0_735_8"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+            >
+              <path d="M20 0H0V20H20V0Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_735_8)">
+              <path
+                d="M8.33322 5L7.15405 6.17917L10.9749 10L7.15405 13.8208L8.33322 15L13.3332 10L8.33322 5Z"
+                fill="white"
+              />
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0_735_8">
+              <rect width="20" height="20" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </form>
+
+  <div class="flex flex-col p-6 lg:p-16 lg:max-w-4xl gap-6">
+    <h1 class="text-3xl text-sky-400 font-semibold">
+      OpenScape Business biedt meer UC-functionaliteit in één oplossing dan
+      enige andere leverancier
+    </h1>
+    <p>
+      Het succes van elk bedrijf, groot of klein, hangt af van de effectiviteit
+      van de communicatie. OpenScape Business biedt de eenvoudigste weg naar het
+      uitrollen van volledige, IP-gebaseerde unified communications over het
+      hele netwerk van gebruikers:
+    </p>
+    <ul class="list-disc ml-8">
+      <li>
+        Onafhankelijk gebruik van uw bestaande telefonie-infrastructuur - of dit
+        nu klassieke telefonie, IP of DECT is
+      </li>
+      <li>
+        Eenvoudig te gebruiken, volledig schaalbare en kosteneffectieve
+        oplossing
+      </li>
+      <li>
+        Kostenbesparende Voice over IP (VoIP) van hoge kwaliteit op bestaande
+        netwerken
+      </li>
+      <li>
+        Flexibele implementatiemodellen - op locatie, gehost, in de cloud of
+        gecombineerd
+      </li>
+      <li>
+        Pure software-gebaseerde optie met OpenScape Business S voor private
+        cloud implementatie
+      </li>
+      <li>
+        Permanente (CAPEX) of abonnementsgebaseerde (OPEX) gebruiksmodellen
+      </li>
+      <li>
+        UC beschikbaar op de belangrijkste mobiele platforms; ondersteuning voor
+        Android en Apple iOS
+      </li>
+      <li>Integratiemogelijkheden met Microsoft 365 en Microsoft Teams</li>
+      <li>
+        Go Hybrid: voeg cloud-gebaseerde diensten toe voor samenwerking (video,
+        screensharing, telefonie)
+      </li>
+    </ul>
+  </div>
 </div>
